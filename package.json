@@ -1,7 +1,7 @@
 {
-  "name": "farmsellapi",
+  "name": "petstoreapi",
   "version": "1.0.0",
-  "description": "A API for a Online Vegetable Selling Site",
+  "description": "A API for a Online Pet Store Site",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
