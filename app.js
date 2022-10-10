@@ -71,7 +71,7 @@ app.get('/will-be-cached', (req, res) => {
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
-      title: "Vitolic API Docs",
+      title: "Pet Store API Docs",
       version: "v1",
     },
 
