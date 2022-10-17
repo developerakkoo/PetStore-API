@@ -1,4 +1,5 @@
 const Category = require('./../Models/categoryModel');
+const io = require('../socket');
 
 
 exports.postCategory = async (req, res, next) => {
@@ -37,8 +38,9 @@ exports.getCategory = async (req, res, next) => {
         const category = await Category.find({});
 
          if(category){
+            io.getIO().emit('get:category', category);
+
              res.status(200).json({ status: true, count:category.length,message:'category fetched successfully', category: category })
-             io.getIO().emit('get:category', category);
  
          }  
      } catch (error) {
