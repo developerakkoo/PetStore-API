@@ -73,7 +73,7 @@ exports.postPetProduct = async (req, res, next) => {
         mainCategory: mainCategory,
         subCategory: subCategory,
         imageFilePath: imageFilePath,
-        imageUrl: req.protocol + '://' + req.hostname + ":" + process.env.PORT + '/' + imageUrl
+        imageUrl: req.protocol + '://' + req.hostname + '/' + imageUrl
     });
     //product.quantity.push(quantity);
 
